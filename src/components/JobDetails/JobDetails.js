@@ -10,9 +10,7 @@ export default function JobDetails() {
     const [isEditable, setIsEditable] = useState(false);
     const [isLoggedIn] = useState(!!localStorage.getItem("token"));
 
-    useEffect(() => {
-        fetchJobDetails();
-    }, [fetchJobDetails]);
+   
 
     const fetchJobDetails = async () => {
         if (!id) return;
@@ -20,6 +18,10 @@ export default function JobDetails() {
         setJobDetails(result.jobDetails);
         setIsEditable(result.isEditable);
     };
+
+    useEffect(() => {
+        fetchJobDetails();
+    }, ["fetchJobDetails"]);
 
     const logout = () => {
         localStorage.clear();
