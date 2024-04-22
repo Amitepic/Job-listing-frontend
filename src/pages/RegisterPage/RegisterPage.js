@@ -19,11 +19,12 @@ export default function RegisterPage() {
                 />
                 <h1
                     style={{
-                        position: "relative",
+                        
                         color: "white",
                         position: "relative",
                         zIndex: 1,
                         left: "50%",
+                        
                     }}
                 >
                     Your Personal Job Finder
