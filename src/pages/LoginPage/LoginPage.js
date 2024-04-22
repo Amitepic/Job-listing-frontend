@@ -21,7 +21,7 @@ export default function LoginPage() {
                     style={{
                         position: "relative",
                         color: "white",
-                        position: "relative",
+                    
                         zIndex: 1,
                         left: "50%",
                     }}

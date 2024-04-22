@@ -26,7 +26,7 @@ export default function Home() {
 
     useEffect(() => {
         fetchAllJobs();
-    }, []);
+    }, [fetchAllJobs]);
 
     const handleSkill = (event) => {
         const newArr = skills.filter((skill) => skill === event.target.value);
@@ -106,7 +106,7 @@ export default function Home() {
                     <div key={data._id} className={styles.list}>
                         <div className={styles.listLeft}>
                             <div>
-                                <img src={data.logoURL} />
+                                <img src={data.logoURL} alt="img" />
                             </div>
                             <div className={styles.infoLeft}>
                                 <p className={styles.position}>

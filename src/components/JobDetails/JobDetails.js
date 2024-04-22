@@ -12,7 +12,7 @@ export default function JobDetails() {
 
     useEffect(() => {
         fetchJobDetails();
-    }, []);
+    }, [fetchJobDetails]);
 
     const fetchJobDetails = async () => {
         if (!id) return;

@@ -14,7 +14,8 @@ export default function JobPostPage() {
                         width: "50vw",
                         zIndex: 0,
                     }}
-                    src={JobImage}
+                    src={JobImage }
+                    alt ="img"
                 />
                 <h1
                     style={{
