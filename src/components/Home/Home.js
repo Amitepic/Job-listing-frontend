@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-
 import { useNavigate } from "react-router-dom";
-
 import styles from "./Home.module.css";
 import { DEFAULT_SKILLS } from "../../utils/constant";
 import { getAllJobs } from "../../apis/job";
@@ -26,7 +24,7 @@ export default function Home() {
 
     useEffect(() => {
         fetchAllJobs();
-    }, ['fetchAllJobs']);
+    }, [fetchAllJobs]);
 
     const handleSkill = (event) => {
         const newArr = skills.filter((skill) => skill === event.target.value);
