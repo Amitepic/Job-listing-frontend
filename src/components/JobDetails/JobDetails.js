@@ -21,7 +21,7 @@ export default function JobDetails() {
 
     useEffect(() => {
         fetchJobDetails();
-    }, [fetchJobDetails]);
+    });
 
     const logout = () => {
         localStorage.clear();

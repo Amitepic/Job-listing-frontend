@@ -24,7 +24,8 @@ export default function Home() {
 
     useEffect(() => {
         fetchAllJobs();
-    }, [fetchAllJobs]);
+        
+    });
 
     const handleSkill = (event) => {
         const newArr = skills.filter((skill) => skill === event.target.value);
