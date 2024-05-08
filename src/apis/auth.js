@@ -1,5 +1,5 @@
 import axios from "axios";
-const backendUrl = `http://localhost:3000/api/v1`;
+const backendUrl = `https://job-listing-if5j.onrender.com`;
 
 export const registerUser = async ({ email, password, mobile, name }) => {
     try {
