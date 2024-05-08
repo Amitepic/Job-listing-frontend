@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Navigate } from "react-router-dom";
-const backendUrl = `http://localhost:3000/api/v1`;
+const backendUrl = `https://job-listing-if5j.onrender.com`;
 
 export const createJobPost = async (JobPostPayload) => {
     try {
